@@ -326,6 +326,75 @@ footer {
 #contact a:hover {
     text-decoration: underline;
 } 
+/* Education Timeline */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline-content {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    width: 60%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+    text-align: center;
+    position: relative;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+}
+
+.timeline-content::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #ff6600;
+    border-radius: 50%;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-50%);
+}
+
+.timeline-item:nth-child(even) .timeline-content::before {
+    left: auto;
+    right: -15px;
+}
+
+.timeline-content h3 {
+    color: #ff9a9e;
+    margin-bottom: 5px;
+}
+
+.timeline-content p {
+    color: #ffffff;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.timeline-content span {
+    font-size: 14px;
+    color: #ff6600;
+    font-weight: bold;
+}
 
 
     </style>
@@ -360,15 +429,29 @@ I enjoy working with cutting-edge technologies, creating well-designed user expe
     
     
     </section>
+      <section id="education" class="fade-in">
+    <h2>Education</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3>University of Madras</h3>
+                <p>Bachelor of Science in Computer Science (B.Sc) - In Progress</p>
+                <span>2023 - 2026</span>
+               
+            </div>
+        </div>
 
-    <section id="education" class="fade-in">
-        <h2>Education</h2>
-        <h3>university of Madras</h3>
-        <p>Bachelor of science in Computer science career,in progress</p>
-        <h4>govt. Arts. College</h4>
-        <p> B.sc-Computer science</p>
-        <p> 2023-2026</p>
-    </section>
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3>Govt. Arts College</h3>
+                <p>Bachelor of science in Computer science </p>
+                
+                    <span>2023 - 2026</span>
+            </div>
+        </div>
+    </div>
+      </section>
+    
 
     <section id="skills" class="fade-in">
         <h2>Skills</h2>
