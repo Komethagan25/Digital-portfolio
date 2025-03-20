@@ -1,1 +1,1 @@
-https://komethagan25.github.io/Portfolio-/
+https://komethagan25.github.io/Digital-portfolio/
